@@ -1,0 +1,98 @@
+@import "../../../../styles/_var.scss";
+$main-clr: #940000;
+$btn-clr: #242425;
+
+:host {
+  display: block;
+  background: #fff url('/assets/img/demo/backgrounds/bk.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.login {
+  background: white;
+  width: 380px;
+
+  .login-header {
+    background: whitesmoke;
+    padding: 24px;
+
+    .logo {
+      height: auto;
+      width: 100px;
+    }
+  }
+
+  .login-content {
+    padding: 24px 42px 42px;
+
+    .mat-form-field {
+      width: 100%;
+    }
+
+    .extra-options {
+      margin: 16px 0 32px;
+
+      .remember-me {
+        color: #777;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: $main-clr;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .note {
+      color: #777;
+      margin: 24px 0 0;
+      text-align: center;
+    }
+  }
+}
+
+
+
+
+.login[_ngcontent-c2] .login-header[_ngcontent-c2] {
+    background: #f5f5f5 ;
+}
+
+img.logo {
+    width: 130px ;
+    height: auto ;
+}
+
+.extra-options a , .login[_ngcontent-c2] .login-content[_ngcontent-c2] a[_ngcontent-c2]{
+    color: $main-clr ;font-size: 13px;
+}
+.mat-raised-button.mat-primary[_ngcontent-c2], .mat-fab.mat-primary[_ngcontent-c2], .mat-mini-fab.mat-primary[_ngcontent-c2] {
+    background-color: $btn-clr;
+}
+
+.mat-raised-button.mat-primary[disabled][_ngcontent-c2], .mat-raised-button.mat-accent[disabled][_ngcontent-c2], .mat-raised-button.mat-warn[disabled][_ngcontent-c2], .mat-raised-button[disabled][disabled][_ngcontent-c2], .mat-fab.mat-primary[disabled][_ngcontent-c2], .mat-fab.mat-accent[disabled][_ngcontent-c2], .mat-fab.mat-warn[disabled][_ngcontent-c2], .mat-fab[disabled][disabled][_ngcontent-c2], .mat-mini-fab.mat-primary[disabled][_ngcontent-c2], .mat-mini-fab.mat-accent[disabled][_ngcontent-c2], .mat-mini-fab.mat-warn[disabled][_ngcontent-c2], .mat-mini-fab[disabled][disabled][_ngcontent-c2] {
+    background-color: rgba(0, 0, 0, 0.12);
+}
+.login[_ngcontent-c2] .login-header[_ngcontent-c2] .logo[_ngcontent-c2] {
+    height: auto;
+    width: 130px;
+}
+:host {
+    background: url(/assets/img/demo/backgrounds/bk.jpg) no-repeat center center fixed;
+}
+.mat-checkbox-layout{ 
+  .mat-checkbox-label {
+    line-height: 24px;
+    font-size: 14px;
+  }
+}
+.mat-button, .mat-raised-button, .mat-icon-button, .mat-fab, .mat-mini-fab{
+     font-family: 'Montserrat', sans-serif  !important; }
+     p.note a {
+    font-size: 13px;
+}

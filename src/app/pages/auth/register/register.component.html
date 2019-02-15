@@ -1,0 +1,32 @@
+<div fxLayout="row" fxLayoutAlign="center center" style="height: 100%;">
+  <div class="register mat-elevation-z12">
+    <div class="register-header" fxLayout="column" fxLayoutAlign="center center">
+      <img class="logo" src="assets/img/logo_ariel.png">
+    </div>
+    <form #form="ngForm" (ngSubmit)="register(registerFormModel)" novalidate>
+      <div class="register-content" fxLayout="column" fxLayoutAlign="start stretch">
+        <mat-form-field>
+          <input matInput placeholder="First Name" name="firstname" required [(ngModel)]="registerFormModel.firstname">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Last Name" name="lastname" required [(ngModel)]="registerFormModel.lastname">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="E-Mail" [pattern]="emailPattern" name="email" required [(ngModel)]="registerFormModel.email">
+        </mat-form-field>
+         <mat-form-field>
+          <input matInput (keyup)="passwordConfirming(registerFormModel)" placeholder="Password" id="password"  type="password" name="password" required [(ngModel)]="registerFormModel.password" #password="ngModel">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput (keyup)="passwordConfirming(registerFormModel)" placeholder="Password (Confirm)" id="passwordConfirm" type="password" name="passwordConfirm" required [(ngModel)]="registerFormModel.passwordConfirm" #passwordConfirm="ngModel">
+        </mat-form-field> 
+        <div *ngIf="!passwordMatched" style="color: red;font-size: 13px;">Password not match</div>
+        <div class="extra-options" fxLayout="row" fxLayoutAlign="center center">
+          <mat-checkbox class="remember-me">I accept the <a href="#">terms and conditions.</a></mat-checkbox>
+        </div>
+        <button color="primary" mat-raised-button [disabled]="!form.valid || !passwordMatched">CREATE ACCOUNT</button>
+        <p class="note">Already have an account?<br/> <a [routerLink]="['/auth/login']">Sign in here</a></p>
+      </div>
+    </form>
+  </div>
+</div>

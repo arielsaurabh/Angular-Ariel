@@ -1,0 +1,71 @@
+@import "../../../../styles/_var.scss";
+$main-clr: #940000;
+$btn-clr: #242425;
+:host {
+  display: block;
+  background: #fff url('/assets/img/demo/backgrounds/bk.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.register {
+  background: white;
+  width: 380px;
+
+  .register-header {
+    background: whitesmoke;
+    padding: 24px;
+
+    .logo {
+    height: auto;
+      width: 130px;
+    }
+  }
+
+  .register-content {
+    padding: 24px 42px 42px;
+
+    .mat-form-field {
+      width: 100%;
+    }
+
+    .extra-options {
+      margin: 16px 0 32px;
+
+      .remember-me {
+        color: #777;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: $main-clr;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .note {
+      color: #777;
+      margin: 24px 0 0;
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+}
+
+.mat-input-wrapper.mat-form-field-wrapper {
+    padding-bottom: 1em;
+}
+.register[_ngcontent-c2] .register-header[_ngcontent-c2] {
+    background: whitesmoke;
+    padding: 24px;
+}
+.mat-checkbox-layout .mat-checkbox-label {
+    line-height: 24px;font-size: 14px;
+}
+p.note a {
+    font-size: 13px;
+}

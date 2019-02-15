@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+body{font-family: 'Montserrat', sans-serif !important;}
+
+.layout.alpha .sidenav .header {
+    background: white;
+}
+
+
+.scroll-content {
+    background: #222;
+}
+.mat-input-infix.mat-form-field-infix {
+    font-size: 13px;
+}
+.mat-checkbox-layout{ 
+  .mat-checkbox-label {
+    line-height: 24px;
+    font-size: 14px;
+  }
+}
+
+.mat-checkbox[_ngcontent-c2], .mat-checkbox[_ngcontent-c6] {
+   font-family: 'Montserrat', sans-serif !important;    font-size: 13px;
+}
+.mat-button[_ngcontent-c6], .mat-raised-button[_ngcontent-c6], .mat-icon-button[_ngcontent-c6], .mat-fab[_ngcontent-c6], .mat-mini-fab[_ngcontent-c6]{
+    font-family:'Montserrat', sans-serif !important; 
+}
+form.ng-tns-c2-0 button , form.ng-tns-c2-9  button {
+    font-family: 'Montserrat', sans-serif !important;
+}
+.buy-now-toolbar.mat-elevation-z4.ng-star-inserted {
+    display: none;
+}
+.header.ng-star-inserted img {
+    height: 40px !important;
+}
+.mat-button, .mat-raised-button, .mat-icon-button, .mat-fab, .mat-mini-fab, .mat-checkbox, span.mat-checkbox-label, span.mat-button-wrapper{
+     font-family: 'Montserrat', sans-serif !important; }
+
+.layout.alpha .sidenav-item-container > .sub-menu .sidenav-item-container > .sidenav-item:hover .letter-icon.ng-star-inserted {
+    background-color: #a51a1a;   
+    color: white;
+}
+.layout.alpha .sidenav-item-container > .sidenav-item:hover mat-icon.icon.mat-icon.material-icons.ng-star-inserted {
+    background-color: #a51a1a;    transition: all ease 300ms;
+    color: white;
+}
+.card.space .header {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.mat-tab-group {font-family: 'Montserrat', sans-serif;}
+.dashboard .dashboard-tabs > .mat-tab-header .mat-tab-labels .mat-tab-label {font-family: 'Montserrat', sans-serif;}
+ 
+*{font-family: 'Montserrat', sans-serif;}
+
+.layout.alpha .sidenav-item-container > .sub-menu .sidenav-item-container > .sidenav-item {
+    padding-left: 46px;
+    background-color: #a51a1a;
+    color: whitesmoke;    transition: all ease 300ms;
+}
+button.action.mat-raised-button.mat-primary, button.create.mat-mini-fab.mat-primary {
+    background-color: #a61b1b;
+}
+.meetings button.mat-raised-button.mat-primary {
+    background-color: #a61b1b !important;
+}
+.name {
+    font-size: 13px;
+}
+table tr td {
+    font-size: 13px;
+}
+.meetings button.mat-button.mat-primary {
+    color: #3e3c3c;
+}
+.list-content .list-message {
+    font-size: 13px !important;
+}
+mat-row.mat-row.ng-star-inserted mat-cell, .date, span.mat-button-wrapper {
+    font-size: 13px;
+}
+.legend-item.ng-star-inserted {
+    padding: 5px 0;
+}
+
+

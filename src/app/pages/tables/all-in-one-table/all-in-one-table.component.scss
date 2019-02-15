@@ -1,0 +1,21 @@
+@import "../../../../styles/_var.scss";
+
+.all-in-one-table {
+  padding: $padding__page;
+}
+
+.actions {
+  .create {
+    margin-left: $padding__page;
+  }
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.layout.alpha .sidenav .header {
+    background: white;
+}
+
+.mat-tab-group[_ngcontent-c25] {@extend %font-fam}

@@ -1,0 +1,269 @@
+$clr-menu:rgba(255, 255, 255, 0.75);
+
+.layout.alpha {
+
+  /*
+  Toolbar
+   */
+
+  .toolbar {
+    color: $layout-alpha__color__toolbar;
+    background: whitesmoke;
+
+    .search-bar {
+
+      .search-wrapper {
+
+        input.search-input {
+          background: rgba(48, 52, 65, 0.05);font-size:13px;
+
+          &:hover {
+            background: rgba(48, 52, 65, 0.1);
+          }
+        }
+
+        &.focus {
+          input.search-input {
+            background: rgba(48, 52, 65, 0.1);
+          }
+        }
+      }
+    }
+
+    .icon-button .icon {
+      color: $layout-alpha__color__toolbar;
+    }
+  }
+
+  /*
+  Sidenav
+   */
+
+  .sidenav {
+     background: $layout-alpha__background__sidenav;
+    //background: hsla(0, 0%, 62%, 0.92);
+    .header {
+      // background: $layout-alpha__background__sidenav-header;
+      background:#ececed;
+    }
+
+    .menu {
+
+      .heading {
+        color: $clr-menu;
+      }
+    }
+
+  }
+
+  .sidenav-item {
+    color:$clr-menu;
+
+    &:hover {
+      color: #FFFFFF;
+    }
+
+    &.active {
+      color: #FFFFFF;
+    }
+
+    .icon, .letter-icon {
+      background: $layout-alpha__background__sidenav-item__icon;
+    }
+  }
+
+  .sidenav-item-container {
+    > .sidenav-item {
+      &:hover {
+            background: whitesmoke;
+    color: #232323;
+      }
+
+      &.active {
+        background: $layout-alpha__background-color__sidenav-item__active;
+      }
+    }
+
+    > .sub-menu { // Level 1 aka 1st Dropdown
+      background: $layout-alpha__background-color__sidenav-item__level1;
+
+      .sidenav-item-container {
+        > .sidenav-item {
+          padding-left: $padding__sidenav-item__level1;
+
+          &:hover {
+            background: whitesmoke;
+            color:$layout-alpha__background-color__sidenav-item__level1__active;
+            
+          }
+
+          &.active {
+            background: $layout-alpha__background-color__sidenav-item__level1__active;
+            color:whitesmoke;
+          }
+        }
+
+        > .sub-menu { // Level 2
+          background: $layout-alpha__background-color__sidenav-item__level2;
+
+          .sidenav-item-container {
+            > .sidenav-item {
+              padding-left: $padding__sidenav-item__level2;
+
+              &:hover {
+                background: $layout-alpha__background-color__sidenav-item__level2__hover;
+              }
+
+              &.active {
+                background: $layout-alpha__background-color__sidenav-item__level2__active;
+              }
+            }
+
+            > .sub-menu { // Level 3
+              background: $layout-alpha__background-color__sidenav-item__level3;
+
+              .sidenav-item-container {
+                > .sidenav-item {
+                  padding-left: $padding__sidenav-item__level3;
+
+                  &:hover {
+                    background: $layout-alpha__background-color__sidenav-item__level3__hover;
+                  }
+
+                  &.active {
+                    background: $layout-alpha__background-color__sidenav-item__level3__active;
+                  }
+                }
+
+                > .sub-menu { // Level 4
+                  background: $layout-alpha__background-color__sidenav-item__level4;
+
+                  .sidenav-item-container {
+                    > .sidenav-item {
+                      padding-left: $padding__sidenav-item__level4;
+
+                      &:hover {
+                        background: $layout-alpha__background-color__sidenav-item__level4__hover;
+                      }
+
+                      &.active {
+                        background: $layout-alpha__background-color__sidenav-item__level4__active;
+                      }
+                    }
+
+                    > .sub-menu { // Level 5
+                      background: $layout-alpha__background-color__sidenav-item__level5;
+
+                      .sidenav-item-container {
+                        > .sidenav-item {
+                          padding-left: $padding__sidenav-item__level5;
+
+                          &:hover {
+                            background: $layout-alpha__background-color__sidenav-item__level5__hover;
+                          }
+
+                          &.active {
+                            background: $layout-alpha__background-color__sidenav-item__level5__active;
+                          }
+                        }
+
+                        .sub-menu { // Infinite Levels after
+                          background: $layout-alpha__background-color__sidenav-item__level6;
+
+                          .sidenav-item-container > .sidenav-item {
+                            padding-left: $padding__sidenav-item__level6;
+
+                            &:hover {
+                              background: $layout-alpha__background-color__sidenav-item__level6__hover;
+                            }
+
+                            &.active {
+                              background: $layout-alpha__background-color__sidenav-item__level6__active;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .sidenav-item-container .sub-menu {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+
+    &:before, &:after {
+      content: " ";
+      left: 0;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      z-index: 3;
+    }
+
+    &:before {
+      background: linear-gradient(180deg, rgba(0,0,0,.3) 0, transparent);
+      top: 0;
+    }
+
+    &:after {
+      background: linear-gradient(-180deg, rgba(0,0,0,.3) 0, transparent);
+      bottom: 0;
+    }
+  }
+}
+.buy-now-toolbar{
+
+  img{max-height:40px !important;}
+
+} 
+
+
+mat-table.mat-table {
+
+  mat-row:nth-child(even) {
+      background-color: whitesmoke;
+  }
+
+}
+
+.sidenav[_ngcontent-c12] .header[_ngcontent-c12] .toggle[_ngcontent-c12]:hover {
+    color: #383131;
+}
+.layout.alpha .sidenav-item-container > .sub-menu .sidenav-item-container > .sidenav-item:hover {
+    background: #373030;
+    color: whitesmoke;
+}
+// .layout.alpha .sidenav-item-container > .sub-menu .sidenav-item-container > .sidenav-item.active {
+//     background: whitesmoke;
+//     color: #373030;
+// }
+.layout.alpha .sidenav-item .icon, .layout.alpha .sidenav-item .letter-icon {
+    background: rgba(49, 47, 47, 0.86);
+    color: whitesmoke;
+}
+a.sidenav-item.mat-ripple.ng-star-inserted.active .letter-icon.ng-star-inserted {
+    background-color: #991819;
+}
+.mat-progress-spinner circle, .mat-spinner circle {
+    stroke: #3e3c3c;
+}
+.mat-checkbox-indeterminate.mat-primary .mat-checkbox-background, .mat-checkbox-checked.mat-primary .mat-checkbox-background {
+    background-color: #a71c1c;
+}
+vr-scrollbar.legend-items {
+    background-color: #232323;
+}
+.legend-item.ng-star-inserted div {
+    color: #b7b7b7;
+}
+.legend-item.ng-star-inserted:hover div {
+    color: white;
+}
